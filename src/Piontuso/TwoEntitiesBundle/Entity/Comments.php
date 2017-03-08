@@ -103,15 +103,25 @@ class Comments
     /**
      * Set user identifier.
      *
-     * @param int $user_id
+     * @param User $user
      *
      * @return Comments
      */
-    public function setUser($user_id)
+    public function setUser($user)
     {
-      $this->user = $user_id;
+      $this->user = $user;
 
       return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return User
+     */
+    public function getUser()
+    {
+      return $this->user;
     }
 }
 
