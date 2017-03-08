@@ -99,5 +99,19 @@ class Comments
     {
         return $this->content;
     }
+
+    /**
+     * Set user identifier.
+     *
+     * @param int $user_id
+     *
+     * @return Comments
+     */
+    public function setUser($user_id)
+    {
+      $this->user = $user_id;
+
+      return $this;
+    }
 }
 
