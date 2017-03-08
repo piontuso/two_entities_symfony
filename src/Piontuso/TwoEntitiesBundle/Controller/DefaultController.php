@@ -18,8 +18,8 @@ class DefaultController extends Controller
     public function commentAction(Request $request)
     {
         $comments = new Comments();
-        $comments->setTitle('Test title');
-        $comments->setContent('Test comment ...');
+        $comments->setTitle('Comment title');
+        $comments->setContent('Your comment ...');
         $form = $this->createFormBuilder($comments)
           ->add('title', TextType::class)
           ->add('content', TextType::class)
