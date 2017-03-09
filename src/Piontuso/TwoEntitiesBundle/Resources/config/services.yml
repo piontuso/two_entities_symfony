@@ -1,4 +1,4 @@
 services:
-#    two_entities.example:
-#        class: Piontuso\TwoEntitiesBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    two_entities.mailer:
+        class:        Piontuso\TwoEntitiesBundle\Service\UserMailer
+        arguments:    ['@mailer']
